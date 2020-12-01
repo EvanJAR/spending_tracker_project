@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> {{ tag.category }} </h1>
+
+<p>Merchants with the same tag:</p>
+
+<ul>
+    {% for merchant in tag_merchants %}
+    <li>
+        {{ merchant.name }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

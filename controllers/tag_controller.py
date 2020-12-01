@@ -8,5 +8,9 @@ tags_blueprint = Blueprint("tags", __name__)
 def tags():
     tags = tag_repository.select_all()
     return render_template("tags/index.html", tags=tags) 
-    
-     
+
+@tags_blueprint.route("/tags/<id>")    
+def show(id):
+    tag = tag_repository.select(id)
+    tag_merchants = tag_repository.merchants(tag)
+    return render_template("tags/show.html", tag=tag, tag_merchants=tag_merchants)
