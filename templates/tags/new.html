@@ -1,8 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-this is where user adds new tags
 
+<form action="/tags" method="post">
+        <div>
+            <label for="tag">Tag:</label>
+            <input  type="text" 
+                    name="tag" 
+                    id="tag" 
+                    placeholder="New Tag" 
+                    required 
+                    autofocus>
+        </div>
 
+    <input class="btn btn--action" type="submit" value="Add Tag">
+</form>
 
 {% endblock %}
