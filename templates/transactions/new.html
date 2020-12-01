@@ -2,4 +2,35 @@
 
 {% block content %}
 this is where user adds new transaction
+
+
+
+<form action="/transactions" method="post">
+
+      <label for="merchant">Select a merchant:</label>
+      <select name="merchant_id" id="merchant">
+        {% for merchant in merchants %}
+        <option value="{{ merchant.id }}">{{ merchant.name }}</option>
+        {% endfor %}
+      </select>
+
+    <br>
+
+    <label for="tag">Select a tag:</label>
+      <select name="tag_id" id="tag">
+        {% for tag in tags %}
+        <option value="{{ tag.id }}">{{ tag.category }}</option>
+        {% endfor %}
+      </select>
+      <br>
+  
+    <label for="amount">Add an amount:</label>
+    <textarea name="amount" id="amount" cols="10" rows="1"></textarea>
+    <input class="btn btn--action" type='submit' value="Submit Amount">
+ 
+    <br>
+  
+    
+</form>
+
 {% endblock %}
