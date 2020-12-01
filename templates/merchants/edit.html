@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-this is the place to go and edit merchant
 
 
+<h2>Edit Merchant:</h2>
+
+<form action="/merchants/{{ merchant.id }}" method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ merchant.name }}">
+        <input type="submit">
+    </div>
+</form>
 
 {% endblock %}

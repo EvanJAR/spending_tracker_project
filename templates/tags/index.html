@@ -4,16 +4,17 @@
 
 <h1>Tags</h1>
 
-<table>
-    <tr>
-        <th>Category</th>
-    </tr>
-    {% for tag in tags %}
-    <tr>
-        <td><a href="/tags/{{ tag.id }} "> {{ tag.category}}  </a></td>
-    </tr>
-    {% endfor %}
-</table>
 
+<section>
+    {% for tag in tags %}
+    <li>
+        <a href="/tags/{{ tag.id }} "> {{ tag.category}}  </a></td>
+    
+    <button>
+        <a href="/tags/{{ tag.id }}/edit">Edit</a>
+     </button>
+    {% endfor %}
+    </li>
+</section>
 
 {% endblock %}
