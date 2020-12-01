@@ -48,7 +48,7 @@ def delete(id):
     run_sql(sql, values)
 
 
-    def tags(merchant):
+def tags(merchant):
     tags = []
     sql = """SELECT tags.* FROM tags
                 INNER JOIN transactions ON tags.id = transactions.tag_id
