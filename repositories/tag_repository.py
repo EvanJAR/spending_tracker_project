@@ -32,7 +32,7 @@ def select_all():
 
     for row in results:
         tag = Tag(row['category'], row['id'])
-        tag.append(tag)
+        tags.append(tag)
     return tags
 
 #UPDATE 
