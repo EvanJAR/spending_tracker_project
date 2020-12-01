@@ -3,12 +3,19 @@
 {% block content %}
 
 
+
+<section>
+
+
 {% for merchant in merchants %}
    <li>
       <a href="/merchants/{{ merchant.id }}">{{ merchant.name }}</a> 
+   
+  <button>
+     <a href="/merchants/{{ merchant.id }}/edit">Edit</a>
+  </button>
    </li> 
+</section>
 {% endfor %}
-
-
 
 {% endblock %}

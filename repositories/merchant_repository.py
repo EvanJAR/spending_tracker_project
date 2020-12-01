@@ -61,3 +61,8 @@ def tags(merchant):
         tag = Tag(row['category'], row['id'])
         tags.append(tag)
     return tags
+
+def update(merchant):
+    sql = "UPDATE merchants SET name = %s WHERE id = %s"
+    values = [merchant.name, merchant.id]
+    run_sql(sql, values)
