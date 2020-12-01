@@ -4,9 +4,11 @@
 
 <h3>Merchants</h3>
 
+<p>
+   <a class="btn btn--action" href="/merchants/new">Add Merchant</a>
+</p>
+
 <section>
-
-
 {% for merchant in merchants %}
    <li>
       <a href="/merchants/{{ merchant.id }}">{{ merchant.name }}</a> 
