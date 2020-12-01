@@ -5,7 +5,7 @@
 
 {% for merchant in merchants %}
    <li>
-       {{ merchant.name }}
+      <a href="/merchants/{{ merchant.id }}">{{ merchant.name }}</a> 
    </li> 
 {% endfor %}
 
