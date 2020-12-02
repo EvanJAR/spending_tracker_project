@@ -7,6 +7,10 @@
     <a class="btn btn--action" href="/transactions/new">Add Transaction</a>
 </p>
 
+    <section id="total">
+      <h3>Total Money Spent: £{{ total }} </h3>
+    </section>
+
 <ul>
     {% for transaction in transactions %}
     <li>
@@ -20,6 +24,12 @@
     </li>
 
     {% endfor %}
+    
+   
+
+  
 </ul>
+
+
 
 {% endblock %}

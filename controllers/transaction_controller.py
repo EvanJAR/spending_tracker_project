@@ -10,7 +10,8 @@ transactions_blueprint = Blueprint("transactions", __name__)
 @transactions_blueprint.route("/transactions")
 def transactions():
     transactions = transaction_repository.select_all()
-    return render_template("transactions/index.html", transactions=transactions)
+    total = transaction_repository.total()
+    return render_template("transactions/index.html", transactions=transactions, total=total)
 
 @transactions_blueprint.route("/transactions/new", methods=['GET'])
 def new_transaction():
@@ -33,3 +34,4 @@ def create_transaction():
 def delete_task(id):
     transaction_repository.delete(id)
     return redirect('/transactions')
+
