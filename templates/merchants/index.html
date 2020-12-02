@@ -17,6 +17,12 @@
      <a href="/merchants/{{ merchant.id }}/edit">Edit</a>
   </button>
    </li> 
+   <p>
+   <form action="/merchants/{{ merchant.id }}/delete" method="POST">
+     <input class="btn btn--danger" type="submit" value="delete" />
+   </form>
+ </p>
 {% endfor %}
+
 </section>
 {% endblock %}

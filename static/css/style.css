@@ -46,7 +46,7 @@ a.active,a:hover{
     text-align: center;
 }
 .heading{
-    font-size: 100px;
+    font-size: 80px;
 }
 .list{
     font-size: 30px;
@@ -54,4 +54,7 @@ a.active,a:hover{
 
 .total{
     font-size: 50px;
+}
+.btn{
+    text-align: right;
 }
