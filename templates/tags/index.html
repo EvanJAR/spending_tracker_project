@@ -16,6 +16,11 @@
     <button>
         <a href="/tags/{{ tag.id }}/edit">Edit</a>
      </button>
+     <p>
+        <form action="/tags/{{ tag.id }}/delete" method="POST">
+          <input class="btn btn--danger" type="submit" value="delete" />
+        </form>
+      </p>
     {% endfor %}
     </li>
 </section>
