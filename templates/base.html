@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Spending Tracker</title>
 </head>
 <body>
     <main>
         <nav>
+            <label class="logo">Spending Tracker</label>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a class="active" href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/merchants">Merchants</a>
+                    <a class="active" href="/merchants">Merchants</a>
                 </li>
                 <li>
-                    <a href="/tags">Tags</a>
+                    <a class="active" href="/tags">Tags</a>
                 </li>
                 <li>
-                    <a href="/transactions">Transactions</a>
+                    <a class="active" href="/transactions">Transactions</a>
                 </li>
             </ul>
         </nav>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 from controllers.merchant_controller import merchants_blueprint
 from controllers.transaction_controller import transactions_blueprint
