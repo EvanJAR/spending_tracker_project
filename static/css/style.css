@@ -33,4 +33,10 @@ nav ul li{
 nav ul li a{
     color: white;
     font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: rgb(50, 50, 140);
+    transition: .5s;
 }
