@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>My Transactions</h1>
+<h1 class="heading">My Transactions</h1>
 
 <p>
     <a class="btn btn--action" href="/transactions/new">Add Transaction</a>
 </p>
 
-    <section id="total">
+    <section class="total">
       <h3>Total Money Spent: £{{ total }} </h3>
     </section>
 
-<ul>
+<ul class="list">
+    <hr>
     {% for transaction in transactions %}
     <li>
         <h3><b>{{ transaction.merchant.name }} </b>  - <i> {{ transaction.tag.category }}</i> </h3>
@@ -22,7 +23,7 @@
             </form>
           </p>
     </li>
-
+    <hr>
     {% endfor %}
     
    

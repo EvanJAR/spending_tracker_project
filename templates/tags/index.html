@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<h1>Tags</h1>
+<h1 class="heading">Tags</h1>
 
 <p>
     <a class="btn btn--action" href="/tags/new">Add Tag</a>
 </p>
 
-<section>
+<section class="list">
     {% for tag in tags %}
     <li>
         <a href="/tags/{{ tag.id }} "> {{ tag.category}}  </a></td>

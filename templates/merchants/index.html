@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<h3>Merchants</h3>
+<h3 class="heading">Merchants</h3>
 
 <p>
    <a class="btn btn--action" href="/merchants/new">Add Merchant</a>
 </p>
 
-<section>
+<section class="list">
 {% for merchant in merchants %}
    <li>
       <a href="/merchants/{{ merchant.id }}">{{ merchant.name }}</a> 
@@ -17,7 +17,6 @@
      <a href="/merchants/{{ merchant.id }}/edit">Edit</a>
   </button>
    </li> 
-</section>
 {% endfor %}
-
+</section>
 {% endblock %}

@@ -8,9 +8,10 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(/images/coin_stack.jpg);
 }
 nav{
-    background: rgb(92, 208, 228);
+    background: rgb(49, 112, 123);
     height: 80px;
     width: 100%;
 }
@@ -29,6 +30,7 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 10px;
+    position: relative;
 }
 nav ul li a{
     color: white;
@@ -37,6 +39,19 @@ nav ul li a{
     border-radius: 3px;
 }
 a.active,a:hover{
-    background: rgb(50, 50, 140);
+    background: rgb(11, 25, 28);
     transition: .5s;
+}
+.content{
+    text-align: center;
+}
+.heading{
+    font-size: 100px;
+}
+.list{
+    font-size: 30px;
+}
+
+.total{
+    font-size: 50px;
 }
