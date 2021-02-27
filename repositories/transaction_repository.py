@@ -35,6 +35,16 @@ def delete(id):
     run_sql(sql, values)
 
 
+
+
+# FUNCTION TO CALCULATE TOTAL 
+# create an empty variable labeled "total"
+# then create another variable labelled "transactions" the value of which will be a list of the transactions in the database.
+#loop through this list of transactions
+#access each element in the list and add the "amount" contained in each to the empty variable called "total"
+# return total
+# this will show the total amount the user has put into the spending tracker  
+
 def total():
     total = 0
     transactions = select_all()

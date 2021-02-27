@@ -13,7 +13,7 @@
 
 <ul class="list">
     <hr>
-    {% for transaction in transactions %}
+    {% for transaction in transactions|sort(attribute='amount') %}
     <li>
         <h3><b>{{ transaction.merchant.name }} </b>  - <i> {{ transaction.tag.category }}</i> </h3>
         <p><b>Amount:</b> £{{ transaction.amount }} </p>
